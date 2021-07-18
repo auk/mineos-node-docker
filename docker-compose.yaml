@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  mineos:
+    image: hexparrot/mineos
+    restart: always
+    ports:
+      - "25565:25565"
+      - "25566:25566"
+      - "25567:25567"
+      - "127.0.0.1:8443:8443"
+    volumes:
+      - data:/var/games/minecraft
+
+volumes:
+  data:

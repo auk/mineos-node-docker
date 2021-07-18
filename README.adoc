@@ -1,0 +1,17 @@
+= Docker-compose for mineos-node server
+
+Amazing project `mineos-node` (https://github.com/hexparrot/mineos-node) already has docker image - https://hub.docker.com/r/hexparrot/mineos
+
+What we need - easy way to start it.
+
+== Start server
+
+- start server 
+[source,shell]
+----
+$ git clone https://github.com/auk/mineos-node-docker
+$ docker-compose up -d
+----
+
+- open in browser https://127.0.0.1:8443 Username: `mc`, password can be found in the beginning of docker container logs.
+
